@@ -9,11 +9,11 @@ menuBtn.addEventListener('click', () => {
 // Image slider for about section
 const sliderContainer = document.querySelector('.about-image .slider');
 const imagePaths = [
-    './src/images/about-image/image1.jpg',
-    './src/images/about-image/image2.jpg',
-    './src/images/about-image/image3.jpg',
-    './src/images/about-image/image4.jpg',
-    './src/images/about-image/image5.jpg'
+    './src/images/about-image/eldenring.webp',
+    './src/images/about-image/portal2.avif',
+    './src/images/about-image/minecraft.jpg',
+    './src/images/about-image/godofwar.jpg',
+    './src/images/about-image/crabik.webp'
 ];
 
 // For testing with placeholder images (remove in production)
@@ -34,7 +34,7 @@ imagePaths.forEach((path, index) => {
     img.src = placeholderPaths[index];
     
     // In production, uncomment the line below to use actual images
-    // img.src = path;
+    img.src = path;
     
     img.alt = `KEKW Circle Game Event ${index + 1}`;
     
