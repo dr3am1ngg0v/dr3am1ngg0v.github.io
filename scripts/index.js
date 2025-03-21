@@ -16,22 +16,13 @@ const imagePaths = [
     './src/images/about-image/crabik.webp'
 ];
 
-// For testing with placeholder images (remove in production)
-const placeholderPaths = [
-    '/api/placeholder/600/400?text=Image 1',
-    '/api/placeholder/600/400?text=Image 2',
-    '/api/placeholder/600/400?text=Image 3',
-    '/api/placeholder/600/400?text=Image 4',
-    '/api/placeholder/600/400?text=Image 5'
-];
-
 // Create image elements
 imagePaths.forEach((path, index) => {
     const img = document.createElement('img');
     img.classList.add('slider-img');
     
     // Use placeholder images for development/preview
-    img.src = placeholderPaths[index];
+    // img.src = placeholderPaths[index];
     
     // In production, uncomment the line below to use actual images
     img.src = path;
